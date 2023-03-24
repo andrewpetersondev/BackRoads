@@ -1,9 +1,7 @@
-import React from 'react'
 import logo from '../images/logo.svg'
-import { socialLinks } from '../data'
+import { pageLinks, socialLinks } from '../data'
 import PageLinks from './PageLinks'
 import SocialLink from './SocialLink'
-
 const Navbar = () => {
     return (
         <nav className='navbar'>
@@ -14,7 +12,7 @@ const Navbar = () => {
                         <i className='fas fa-bars'></i>
                     </button>
                 </div>
-                {/* <!-- left this comment on purpose --> */}
+
 
                 <PageLinks parentClass='nav-links' itemClass='nav-link' />
 
@@ -27,5 +25,4 @@ const Navbar = () => {
         </nav>
     )
 }
-
 export default Navbar
